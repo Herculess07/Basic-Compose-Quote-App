@@ -17,10 +17,10 @@ Features
 Screenshots
 -----------\
 *Home Screen showing a list of quotes.*\
-![Screenshot_20240814_160728_Quote App](https://github.com/user-attachments/assets/3801ed38-c500-4aee-bc95-9025ab459241)
+<img alt="List Screen Image" src="https://github.com/user-attachments/assets/3801ed38-c500-4aee-bc95-9025ab459241" width="400">
 
 *Detail Screen with more information about the selected quote.*
-![Screenshot_20240814_160738_Quote App](https://github.com/user-attachments/assets/b31f61de-5730-479d-a5a5-1660931d0b2b)
+<img alt="Details Screen Image" src="https://github.com/user-attachments/assets/b31f61de-5730-479d-a5a5-1660931d0b2b" width="400">
 
 Getting Started
 ---------------
