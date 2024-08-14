@@ -32,7 +32,7 @@ import com.example.quoteapp.model.Quote
 
 
 @Composable
-fun QuoteListItem(quote: Quote, onClickQuote: () -> Unit) {
+fun QuoteListItem(quote: Quote, onClickQuote: (quote: Quote) -> Unit) {
     val context = LocalContext.current
     Card(
         elevation = CardDefaults.cardElevation(4.dp),
@@ -40,7 +40,7 @@ fun QuoteListItem(quote: Quote, onClickQuote: () -> Unit) {
         modifier = Modifier
             .padding(8.dp)
             .background(color = Color.White)
-            .clickable { onClickQuote() },
+            .clickable { onClickQuote(quote) },
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.onPrimary,
         ),

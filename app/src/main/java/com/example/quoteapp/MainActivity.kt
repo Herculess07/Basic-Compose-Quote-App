@@ -1,7 +1,6 @@
 package com.example.quoteapp
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material.icons.Icons
@@ -17,6 +16,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.quoteapp.screens.QuoteDetailsScreen
 import com.example.quoteapp.screens.QuoteListScreen
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -41,8 +41,13 @@ class MainActivity : ComponentActivity() {
 fun App() {
     val context = LocalContext.current
     if (DataManager.isDataLoaded.value) {
-        QuoteListScreen(data = DataManager.data) {
-            Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
+
+        if (DataManager.currentPage.value == Pages.LISTING) {
+            QuoteListScreen(data = DataManager.data) {
+                DataManager.switchPages(it)
+            }
+        } else {
+            DataManager.currentQuote?.let { QuoteDetailsScreen(quote = it) }
         }
     } else {
         Text("Loading")
@@ -73,3 +78,7 @@ fun ShowSnackbar() {
     }
 }
 
+enum class Pages {
+    LISTING,
+    DETAILS
+}
