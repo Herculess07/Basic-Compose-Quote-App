@@ -41,7 +41,7 @@ Getting Started
 
     Copy code
 
-    `git clone https://github.com/Herculess07/Basic-Compose-Quote-App/tree/master`
+    `git clone https://github.com/Herculess07/Basic-Compose-Quote-App`
 
 3.  **Open in Android Studio**: Open the cloned project in Android Studio.
 4.  **Run the App**: Connect an Android device or use an emulator, then click "Run."
