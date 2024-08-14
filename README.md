@@ -17,7 +17,10 @@ Features
 Screenshots
 -----------\
 *Home Screen showing a list of quotes.*\
+![Screenshot_20240814_160728_Quote App](https://github.com/user-attachments/assets/3801ed38-c500-4aee-bc95-9025ab459241)
+
 *Detail Screen with more information about the selected quote.*
+![Screenshot_20240814_160738_Quote App](https://github.com/user-attachments/assets/b31f61de-5730-479d-a5a5-1660931d0b2b)
 
 Getting Started
 ---------------
@@ -37,7 +40,7 @@ Getting Started
 
     Copy code
 
-    `git clone https://github.com/yourusername/BasicComposeQuoteApp.git`
+    `git clone https://github.com/herculess007/Basic-Compose-Quote-App.git`
 
 3.  **Open in Android Studio**: Open the cloned project in Android Studio.
 4.  **Run the App**: Connect an Android device or use an emulator, then click "Run."
